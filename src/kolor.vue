@@ -12,7 +12,7 @@
 		
 		
 		<div v-if="sqrs==false">
-			<input type="text" v-model="num" placeholder="Podaj długość boku(max 4)">
+			<input type="text" v-model="num" placeholder="długość boku(max 4)">
 			<button v-on:click="squares()" class="btn btn-success">Chcę pokolorować prostokąt</button> 
 		</div>
 		<div v-if="sqrsrd==false">
