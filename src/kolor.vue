@@ -53,10 +53,12 @@ export default{
 	},
 	methods:{
 	squares:function(){
+		if(this.num<=4){
 		this.sqrs=true;
 		this.sqrsrd=false;
 		for(var a=0;a<this.num;a++){
 		this.indexes.push(a);
+		}
 		}
 	},
 	donesqrs:function(){
