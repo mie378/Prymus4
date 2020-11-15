@@ -1,19 +1,19 @@
 <template>
 	<div>
 		<div class="margines">
-			<h4>Jak kolorować kwadrat?</h4>
+			<h4>Jak kolorować prostokąt</h4>
 			<h5><ol>
-			<li>Wybierz długość boku kwadratu do kolorowania</li>
-			<li>Potwierdź przyciskiem "chcę kolorować kwadrat"</li>
-			<li>Wpisz liczbę "1" w miejsca, gdzie kwadrat ma być pomalowany</li>
+			<li>Wybierz bok prostokąta do kolorowania</li>
+			<li>Potwierdź przyciskiem "chcę kolorować prostokąt"</li>
+			<li>Wpisz liczbę "1" w miejsca, gdzie prostokąt ma być pomalowany</li>
 			<li>Potwierdź klikając "Koloruj!"</li></ol></h5>
 		</div>
 
 		
 		
 		<div v-if="sqrs==false">
-			<input type="text" v-model="num" placeholder="długość boku(max 4)">
-			<button v-on:click="squares()" class="btn btn-success">Chcę pokolorować kwadrat</button> 
+			<input type="text" v-model="num" placeholder="Podaj długość boku(max 4)">
+			<button v-on:click="squares()" class="btn btn-success">Chcę pokolorować prostokąt</button> 
 		</div>
 		<div v-if="sqrsrd==false">
 			<div v-for="ind in indexes" v-bind:key="ind">
