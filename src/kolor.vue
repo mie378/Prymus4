@@ -3,7 +3,7 @@
 		<div class="margines">
 			<h4>Jak kolorować kwadrat?</h4>
 			<h5><ol>
-			<li>Wybierz bok kwadratu do kolorowania</li>
+			<li>Wybierz długość boku kwadratu do kolorowania</li>
 			<li>Potwierdź przyciskiem "chcę kolorować kwadrat"</li>
 			<li>Wpisz liczbę "1" w miejsca, gdzie kwadrat ma być pomalowany</li>
 			<li>Potwierdź klikając "Koloruj!"</li></ol></h5>
@@ -12,7 +12,7 @@
 		
 		
 		<div v-if="sqrs==false">
-			<input type="text" v-model="num" placeholder="podaj bok kwadratu(max 4)">
+			<input type="text" v-model="num" placeholder="długość boku(max 4)">
 			<button v-on:click="squares()" class="btn btn-success">Chcę pokolorować kwadrat</button> 
 		</div>
 		<div v-if="sqrsrd==false">
