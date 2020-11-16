@@ -90,9 +90,10 @@ export default{
 	}
 	.squa2{
 	width:50px;
-	margin-top:12px;
+	margin-top:0px;
 	height:50px;
-	margin-bottom:12px;
+	margin-bottom:0px;
+	max-width:0px;
 	}
 	.margines{
 	margin:30px;
