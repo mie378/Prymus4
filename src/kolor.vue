@@ -89,6 +89,7 @@ export default{
 	margin-left:50px;
 	}
 	.squa2{
+	width:100%;
 	margin:0px;
 	height:50px;
 	}
