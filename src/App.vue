@@ -1,29 +1,31 @@
 <template>
   <div class="container-fluid">
   
-	<nav class="navbar navbar-dark bg-dark">
+	<nav class="navbar navbar-dark padding bg-dark">
 		<span class="navbar-brand mb-0 h1">Cats and food list</span>
 	</nav>
-	<div class="list">
-	<h1>koty i ich karma</h1>
-		<div v-if="alert==true" class="alert alert-danger" role="alert"><h2>Wypełnij wszystkie pola!</h2></div>
-	</div>
-	<cat-table v-bind:cats="cats" v-on:cdelete="deletec($event)" v-on:cedit="edit($event)"></cat-table>
+	<div class="margin">
+		<div class="list">
+		<h1>koty i ich karma</h1>
+			<div v-if="alert==true" class="alert alert-danger" role="alert"><h2>Wypełnij wszystkie pola!</h2></div>
+		</div>
+		<cat-table v-bind:cats="cats" v-on:cdelete="deletec($event)" v-on:cedit="edit($event)"></cat-table>
 	
-	<form v-on:submit.prevent="addoredit()">
-	<div class="formularz">
-		<div class="form-group">
-			<label for="cat">kot</label>
-			<input v-model="cat" type="text" class="form-control" id="formGroupExampleInput" placeholder="kot">
+		<form v-on:submit.prevent="addoredit()">
+		<div class="formularz">
+			<div class="form-group">
+				<label for="cat">kot</label>
+				<input v-model="cat" type="text" class="form-control" id="formGroupExampleInput" placeholder="kot">
+			</div>
+			<div class="form-group">
+				<label for="nazw">karma</label>
+				<input v-model="food"  type="text" class="form-control" id="formGroupExampleInput2" placeholder="karma">
+			</div>
+			<button type="submit" class="btn btn-info">Zapisz</button> <button type="reset" class="btn btn-danger">Wyczyść pola</button>
 		</div>
-		<div class="form-group">
-			<label for="nazw">karma</label>
-			<input v-model="food"  type="text" class="form-control" id="formGroupExampleInput2" placeholder="karma">
-		</div>
-		<button type="submit" class="btn btn-info">Zapisz</button> <button type="reset" class="btn btn-danger">Wyczyść pola</button>
+		</form>
+		<kolor></kolor>
 	</div>
-	</form>
-	<kolor></kolor>
   </div>
 </template>
 
@@ -93,7 +95,10 @@ export default {
 	}
 	.container-fluid{
 	padding:0;
-	margin:0;
+	margin-left:0;
+	}
+	.padding{
+	padding:1rem;
 	}
 	
 </style>

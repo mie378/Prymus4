@@ -34,7 +34,7 @@
 					</div>
 				</div>
 			</div>
-			<button class="btn btn-danger margines" v-on:click="back()">Powrót</button>
+			<button class="btn btn-danger margin-top" v-on:click="back()">Powrót</button>
 		</div>
 		
 	</div>
@@ -78,7 +78,7 @@ export default{
 	.squa{
 	width:100%;
 	height:70%;
-	margin:20px;
+	margin:1rem;
 	}
 	.coloredfloat{
 	width:100%;
@@ -86,15 +86,18 @@ export default{
 	background-color:black;
 	}
 	.sqrs2{
-	margin-left:50px;
+	margin-left:2rem;
 	}
 	.squa2{
 	width:100%;
 	margin:0px;
-	height:50px;
+	height:2rem;
 	}
-	.margines{
-	margin:30px;
+	.margin{
+	margin:1rem;
+	}
+	.margin-top{
+	margin-top:1rem;
 	}
 	
 </style>
