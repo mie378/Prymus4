@@ -78,7 +78,7 @@ export default{
 	.squa{
 	width:100%;
 	height:70%;
-	margin:1rem;
+	margin:20px;
 	}
 	.coloredfloat{
 	width:100%;
@@ -86,7 +86,7 @@ export default{
 	background-color:black;
 	}
 	.sqrs2{
-	margin-left:2rem;
+	margin-left:50px;
 	}
 	.squa2{
 	width:100%;
@@ -94,10 +94,10 @@ export default{
 	height:2rem;
 	}
 	.margin{
-	margin:1rem;
+	margin:2rem;
 	}
 	.margin-top{
-	margin-top:1rem;
+	margin-top:2rem;
 	}
 	
 </style>
