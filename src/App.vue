@@ -98,7 +98,7 @@ export default {
 	margin-left:0;
 	}
 	.padding{
-	padding:1rem;
+	padding:1vh;
 	}
 	
 </style>

@@ -5,19 +5,28 @@
 				<div class="col-6 text-center border border-left-0 col-md-3"><h3>karma</h3></div>
 			</div>
 			<div v-for="cat2 in cats" v-bind:key="cat2.id">
-				<div class="row">
-					<div v-if="cats.indexOf(cat2)%2==0" class="col-6 bg-light border border-right-0 text-center col-md-3">{{cat2.cat}}</div>
-					<div v-else class="col-6 bg-dark text-white border border-right-0 text-center col-md-3">{{cat2.cat}}</div>  
-					<div v-if="cats.indexOf(cat2)%2==0" class="col-6 bg-light border border-left-0 text-center col-md-3">{{cat2.food}}</div>
-					<div v-else class="col-6 bg-dark text-white border border-left-0 text-center col-md-3">{{cat2.food}}</div>
-					<div class="col-6 col-md-3 text-center">
+				<div v-if="cats.indexOf(cat2)%2==0" class="row bg-light border text-center padding">
+					<div class="col-6 col-md-3">{{cat2.cat}}</div>
+
+					<div class="col-6 col-md-3">{{cat2.food}}</div>
+					<div class="col-6 col-md-3">	
 						<button v-on:click="deletec(cat2.id)" type="button" class="btn btn-danger">Usuń</button>
 					</div>
-					<div class="col-6 col-md-3 text-center">
+					<div class="col-6 col-md-3">
 						<button v-on:click="edit(cat2.id)" type="button" class="btn btn-success">Edytuj</button>
 					</div>
-					
-			</div>
+				</div>
+				<div v-else class="row bg-dark text-white border text-center padding">
+					<div class="col-6 col-md-3">{{cat2.cat}}</div>
+
+					<div class="col-6 col-md-3">{{cat2.food}}</div>
+					<div class="col-6 col-md-3">	
+						<button v-on:click="deletec(cat2.id)" type="button" class="btn btn-danger">Usuń</button>
+					</div>
+					<div class="col-6 col-md-3">
+						<button v-on:click="edit(cat2.id)" type="button" class="btn btn-success">Edytuj</button>
+					</div>
+				</div>
 			
 			</div>
 	</div>
